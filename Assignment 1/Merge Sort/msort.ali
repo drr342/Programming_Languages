@@ -1,0 +1,81 @@
+V "GNAT Lib v6"
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U msort%b		msort.adb		a617e76e NE OO PK
+Z ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W text_io%s		text_io.ads		text_io.ali
+
+U msort%s		msort.ads		be6aa45a EE NE OO PK
+
+D ada.ads		20170912201508 3ffc8e18 ada%s
+D a-except.ads		20170912201514 291912d5 ada.exceptions%s
+D a-ioexce.ads		20170912201508 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170912201514 119b8fb3 ada.streams%s
+D a-tags.ads		20170912201514 01f5e3ef ada.tags%s
+D a-textio.ads		20170912201508 386df5d4 ada.text_io%s
+D a-tiinau.ads		20170912201508 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20170912201512 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20170912201506 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20170912201506 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20170912201512 4be8ce1b interfaces%s
+D i-cstrea.ads		20170912201508 e53d8b8e interfaces.c_streams%s
+D msort.ads		20170925202100 be6aa45a msort%s
+D msort.adb		20170925205118 5dab65fd msort%b
+D system.ads		20170912201510 2da59038 system%s
+D s-crtl.ads		20170912201506 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170912201504 54135002 system.exception_table%s
+D s-ficobl.ads		20170912201504 078245e4 system.file_control_block%s
+D s-parame.ads		20170912201506 7e2a0d7f system.parameters%s
+D s-secsta.ads		20170912201512 86a2856d system.secondary_stack%s
+D s-soflin.ads		20170912201506 14e1eb6c system.soft_links%s
+D s-stache.ads		20170912201510 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170912201506 09bd3940 system.standard_library%s
+D s-stoele.ads		20170912201514 2dc34a04 system.storage_elements%s
+D s-traent.ads		20170912201506 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170912201510 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20170912201508 1b7d22d2 system.wch_con%s
+D text_io.ads		20170912201508 45d626c9 text_io%s
+X 8 a-tiinio.ads
+46k21*Integer_IO 85e27 14|7r26
+X 13 msort.ads
+1K9*Msort 10l5 10e10 14|5b14 59l5 59t10
+3I12*myInteger{integer} 4r47
+4A9*myArray(3I12)<integer> 6r17 8r37 14|10r44 10r60 11r21 35r37 43r21 44r21
+5i4*LENGTH{integer} 6r30
+6a4*inputArray{4A9}
+8U14*Sort 8=20 14|35b14 52s13 53s13 57l8 57t12
+8a20 inArray{4A9} 14|35b20 38r10 41r19 41r41 43r29 44r36 47r27 50r28 54m13
+X 14 msort.adb
+7K12 Int_Io[8|46] 8r8
+10V13 merge{13|4A9} 10b13 10>20 10>31 33l8 33t13 54s24
+10a20 leftArray{13|4A9} 11r29 12r30 16r26 17r13 18r41 26r23 27r56 27r77
+10a31 rightArray{13|4A9} 11r48 13r31 16r59 17r37 21r41 29r24 30r56 30r79
+11a7 mergedArray{13|4A9} 14r32 18m13 21m13 27m10 27r35 30m10 30r35 32r14
+12i7 leftIndex{integer} 16r13 17r23 18r51 19m13 19r26 26r10 27r66
+13i7 rightIndex{integer} 16r45 17r48 21r52 22m13 22r27 29r10 30r67
+14i7 mergedIndex{integer} 18r25 21r25 24m10 24r25 27r22 30r22
+36i7 mid{integer} 41m10 43r46 44r29
+43a13 left{13|4A9} 46r22 47m16 52m18 52r18 54r30
+44a13 right{13|4A9} 49r22 50m16 53m18 53r18 54r36
+46i17 i{integer} 47r21 47r35
+49i17 i{integer} 50r22 50r36
+X 28 text_io.ads
+24K9*Text_IO=24:29 14|1w6 3r5
+
